@@ -419,7 +419,8 @@ var moveBoxRight= function(n, easing, duration)
     $(".button").css("margin-left", function(){
       return pageWidth-boxWidth + "px"
     });
-    $(".button").css("transition", margin-left, duration);
+    $(".button").css("transition-delay", duration);
+    $(".button").css("transition", easing)
   }
 }
 
@@ -437,9 +438,10 @@ var moveBoxLeft= function(n, easing, duration)
   else{
     if(n >= 5) return;
     // add css transition code here;
-    $(id).css("background", ec);
-    $(id).css("margin-left", "0px");
-    $(id).css("transition", margin-left, duration);
+    $(".button").css("background", ec);
+    $(".button").css("margin-left", "0px");
+    $(".button").css("transition", easing);
+    $(".button").css("transition-delay", duration);
   }
 }
 
